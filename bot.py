@@ -1,9 +1,8 @@
 import telebot,requests,sys
 from bs4 import BeautifulSoup
 from telebot import types
-import os
 
-Token=os.environ.get('BOT_TOKEN')
+Token='1839553097:AAFQs_g_R4HK6IOJzFIJUetzAyuLxGiTgRQ'
 bot=telebot.TeleBot(Token)
 
 mm = types.ReplyKeyboardMarkup(row_width=3)
