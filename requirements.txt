@@ -1,6 +1,6 @@
 bs4
 requests
-telebot
+pyTelegramBotAPI
 django
 gunicorn
 django-heroku
