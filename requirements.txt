@@ -1,5 +1,4 @@
 bs4
-sys
 requests
 telebot
 django
