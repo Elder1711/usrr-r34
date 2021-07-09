@@ -72,7 +72,7 @@ def step1(link,page):
     tagsS=''
     for i in tags:
         tagsS+= i + '+'
-    urls='https://rule34.xxx/index.php?page=post&s=list&tags=-futanari-gay'+tagsS
+    urls='https://rule34.xxx/index.php?page=post&s=list&tags=+-futanari+-gay'+tagsS
     for i in range(int(page)):
         url = urls + '&pid=' + str(i * 42)
         responce = requests.get(url)
