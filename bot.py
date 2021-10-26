@@ -26,7 +26,7 @@ def page_call(message):
     global name
     page=message.text
     print(page)
-    urls = step1(name, page)  # Получаем первые ссылки из поиска
+    urls = step1(name, page)  # Получаем первые ссылки из поиска1
     for item in urls:
         respoce = requests.get(item)
         soup = BeautifulSoup(respoce.content, 'html.parser')
