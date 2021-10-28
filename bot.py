@@ -1,8 +1,9 @@
 import telebot,requests
 from bs4 import BeautifulSoup
 
-Token='BOT_TOKEN'
-bot=telebot.TeleBot(Token)
+from boto.s3.connection import S3Connection
+token = S3Connection(os.environ['TOKEN'])
+bot = telebot.TeleBot(token)
 
 @bot.message_handler(commands=['start'])
 def welcome(message):
